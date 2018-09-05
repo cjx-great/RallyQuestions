@@ -1,0 +1,25 @@
+{
+  "name": "just_bulk",
+  "description": "just bulk",
+  "default": true,
+  "schedule": [
+    {
+      "operation": {
+        "operation-type": "delete-index"
+      }
+    },
+    {
+      "operation": {
+        "operation-type": "create-index"
+      }
+    },
+    {
+      "warmup-time-period": 0,
+      "operation": {
+        "operation-type": "bulk",
+        "bulk-size": {{ bulk_size | default(20000) }}
+      },
+      "clients": {{ clients | default(97) }}
+    }
+  ]
+}
