@@ -15,4 +15,4 @@ esrally race --pipeline=benchmark-only --target-hosts="/root/.rally/benchmarks/t
 
 
 #####  `params_*.log`: 
-the log generated after running the race 
+the log generated after running the race with different params
