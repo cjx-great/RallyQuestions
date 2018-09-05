@@ -1,0 +1,254 @@
+2018-09-05 15:15:30,556 -not-actor-/PID:25880 esrally.rally INFO OS [posix.uname_result(sysname='Linux', nodename='jssz-billions-es-15', release='3.16.0-4-amd64', version='#1 SMP Debian 3.16.7-ckt11-1+deb8u3 (2015-08-04)', machine='x86_64')]
+2018-09-05 15:15:30,557 -not-actor-/PID:25880 esrally.rally INFO Python [namespace(_multiarch='x86_64-linux-gnu', cache_tag='cpython-34', hexversion=50594544, name='cpython', version=sys.version_info(major=3, minor=4, micro=2, releaselevel='final', serial=0))]
+2018-09-05 15:15:30,557 -not-actor-/PID:25880 esrally.rally INFO Rally version [1.0.0]
+2018-09-05 15:15:30,557 -not-actor-/PID:25880 esrally.rally INFO Command line arguments: Namespace(advanced_config=False, assume_defaults=False, car='defaults', car_params='', challenge=None, client_options='timeout:60', configuration_name=None, distribution_repository='release', distribution_version='', effective_start_date=None, elasticsearch_plugins='', enable_driver_profiling=False, include_tasks=None, keep_cluster_running=False, laps=1, load_driver_hosts='localhost', offline=True, on_error='continue', pipeline='benchmark-only', plugin_params='', preserve_install='False', quiet=False, report_file='', report_format='markdown', revision='current', runtime_jdk=None, show_in_report='available', subcommand='race', target_hosts='/root/.rally/benchmarks/tracks/billions-rally-tracks/jssz_benchmark_scene_1/target_host.json', team_path=None, team_repository='default', telemetry='', telemetry_params='', test_mode=False, track='jssz_benchmark_scene_1', track_params='/root/.rally/benchmarks/tracks/billions-rally-tracks/jssz_benchmark_scene_1/params/params.json', track_path=None, track_repository='billions-rally-tracks', user_tag='')
+2018-09-05 15:15:30,557 -not-actor-/PID:25880 esrally.utils.net INFO Rally connects directly to the Internet (no proxy support).
+2018-09-05 15:15:30,594 -not-actor-/PID:25880 esrally.rally INFO Actor system already running locally? [False]
+2018-09-05 15:15:30,594 -not-actor-/PID:25880 esrally.actor INFO Starting actor system with system base [multiprocTCPBase] and capabilities [{'coordinator': True, 'Convention Address.IPv4': '127.0.0.1:1900', 'ip': '127.0.0.1'}].
+2018-09-05 15:15:30,609 -not-actor-/PID:25886 root INFO ++++ Actor System gen (3, 9) started, admin @ ActorAddr-(T|:1900)
+2018-09-05 15:15:30,617 -not-actor-/PID:25880 esrally.racecontrol INFO User specified pipeline [benchmark-only].
+2018-09-05 15:15:30,618 -not-actor-/PID:25880 esrally.racecontrol INFO Using configured hosts [{'host': '10.69.8.30', 'port': 9200}]
+2018-09-05 15:15:30,618 -not-actor-/PID:25880 esrally.actor INFO Joining already running actor system with system base [multiprocTCPBase].
+2018-09-05 15:15:30,619 ActorAddr-(T|:1900)/PID:25886 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,620 ActorAddr-(T|:1900)/PID:25886 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,628 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,630 ActorAddr-(T|:56695)/PID:25888 esrally.client INFO Creating ES client connected to [{'host': '10.69.8.30', 'port': 9200}] with options [{'timeout': 60}]
+2018-09-05 15:15:30,630 ActorAddr-(T|:56695)/PID:25888 esrally.client INFO SSL support: off
+2018-09-05 15:15:30,630 ActorAddr-(T|:56695)/PID:25888 esrally.client INFO HTTP basic authentication: off
+2018-09-05 15:15:30,641 ActorAddr-(T|:56695)/PID:25888 esrally.client INFO HTTP compression: off
+2018-09-05 15:15:30,643 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Automatically derived distribution version [5.4.3]
+2018-09-05 15:15:30,648 ActorAddr-(T|:56695)/PID:25888 esrally.utils.repo INFO Checking out [master] in [/root/.rally/benchmarks/tracks/billions-rally-tracks] for distribution version [5.4.3].
+2018-09-05 15:15:30,686 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Received signal from race control to start engine.
+2018-09-05 15:15:30,654 ActorAddr-(T|:56695)/PID:25888 esrally.track.loader INFO Reading track specification file [/root/.rally/benchmarks/tracks/billions-rally-tracks/jssz_benchmark_scene_1/track.json].
+2018-09-05 15:15:30,666 ActorAddr-(T|:56695)/PID:25888 esrally.track.loader INFO Final rendered track for '/root/.rally/benchmarks/tracks/billions-rally-tracks/jssz_benchmark_scene_1/track.json': 
+
+{
+  "version": 2,
+  "description": "max throughput with 3 index",
+  "indices": [
+    
+    
+    
+    {
+      "name": "billions-jssz.benchmark.scene1-0",
+      "body": "settings/mapping.json",
+      "types": [
+        {
+          "name": "logs",
+          "documents": "test.json",
+          "document-count": 1000,
+          "uncompressed-bytes": 2902581
+        }
+      ]
+    }
+    
+    , 
+    {
+      "name": "billions-jssz.benchmark.scene1-1",
+      "body": "settings/mapping.json",
+      "types": [
+        {
+          "name": "logs",
+          "documents": "test.json",
+          "document-count": 1000,
+          "uncompressed-bytes": 2902581
+        }
+      ]
+    }
+    
+    , 
+    {
+      "name": "billions-jssz.benchmark.scene1-2",
+      "body": "settings/mapping.json",
+      "types": [
+        {
+          "name": "logs",
+          "documents": "test.json",
+          "document-count": 1000,
+          "uncompressed-bytes": 2902581
+        }
+      ]
+    }
+    
+  ],
+  "challenges": [
+    
+            
+                
+                {
+  "name": "just_bulk",
+  "description": "just bulk",
+  "default": true,
+  "schedule": [
+    {
+      "operation": {
+        "operation-type": "delete-index"
+      }
+    },
+    {
+      "operation": {
+        "operation-type": "create-index"
+      }
+    },
+    {
+      "warmup-time-period": 0,
+      "operation": {
+        "operation-type": "bulk",
+        "bulk-size": 20
+      },
+      "clients": 1
+    }
+  ]
+}
+            
+  ]
+}
+2018-09-05 15:15:30,687 ActorAddr-(T|:52488)/PID:25889 esrally.metrics INFO Opening metrics store for trial timestamp=[20180905T151530Z], track=[jssz_benchmark_scene_1], challenge=[just_bulk], car=[['external']]
+2018-09-05 15:15:30,672 ActorAddr-(T|:56695)/PID:25888 esrally.track.loader INFO Loading template [definition for index billions-jssz.benchmark.scene1-0 in settings/mapping.json].
+2018-09-05 15:15:30,687 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Cluster will not be provisioned by Rally.
+2018-09-05 15:15:30,675 ActorAddr-(T|:56695)/PID:25888 esrally.track.loader INFO Loading template [definition for index billions-jssz.benchmark.scene1-1 in settings/mapping.json].
+2018-09-05 15:15:30,687 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,678 ActorAddr-(T|:56695)/PID:25888 esrally.track.loader INFO Loading template [definition for index billions-jssz.benchmark.scene1-2 in settings/mapping.json].
+2018-09-05 15:15:30,682 ActorAddr-(T|:56695)/PID:25888 esrally.metrics INFO Creating in-memory metrics store
+2018-09-05 15:15:30,682 ActorAddr-(T|:56695)/PID:25888 esrally.metrics INFO Opening metrics store for trial timestamp=[20180905T151530Z], track=[jssz_benchmark_scene_1], challenge=[just_bulk], car=[['external']]
+2018-09-05 15:15:30,683 ActorAddr-(T|:56695)/PID:25888 esrally.metrics INFO Creating file race store
+2018-09-05 15:15:30,683 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Asking mechanic to start the engine.
+2018-09-05 15:15:30,693 ActorAddr-(T|:61266)/PID:25895 esrally.actor INFO Connecting to externally provisioned nodes on [[{'host': '10.69.8.30', 'port': 9200}]].
+2018-09-05 15:15:30,696 ActorAddr-(T|:61266)/PID:25895 esrally.metrics INFO Opening metrics store for trial timestamp=[20180905T151530Z], track=[jssz_benchmark_scene_1], challenge=[just_bulk], car=[['external']]
+2018-09-05 15:15:30,719 ActorAddr-(T|:52488)/PID:25889 esrally.client INFO Creating ES client connected to [{'host': '10.69.8.30', 'port': 9200}] with options [{'timeout': 60, 'retry-on-timeout': True}]
+2018-09-05 15:15:30,696 ActorAddr-(T|:61266)/PID:25895 esrally.client INFO Creating ES client connected to [{'host': '10.69.8.30', 'port': 9200}] with options [{'timeout': 60}]
+2018-09-05 15:15:30,697 ActorAddr-(T|:61266)/PID:25895 esrally.client INFO SSL support: off
+2018-09-05 15:15:30,697 ActorAddr-(T|:61266)/PID:25895 esrally.client INFO HTTP basic authentication: off
+2018-09-05 15:15:30,706 ActorAddr-(T|:61266)/PID:25895 esrally.client INFO HTTP compression: off
+2018-09-05 15:15:30,719 ActorAddr-(T|:52488)/PID:25889 esrally.client INFO SSL support: off
+2018-09-05 15:15:30,719 ActorAddr-(T|:52488)/PID:25889 esrally.client INFO HTTP basic authentication: off
+2018-09-05 15:15:30,729 ActorAddr-(T|:52488)/PID:25889 esrally.client INFO HTTP compression: off
+2018-09-05 15:15:30,739 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Mechanic has started engine successfully.
+2018-09-05 15:15:30,729 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.launcher INFO All cluster nodes have successfully started. Checking if REST API is available.
+2018-09-05 15:15:30,731 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.launcher INFO REST API is available. Attaching telemetry devices to cluster.
+2018-09-05 15:15:30,737 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.launcher INFO Telemetry devices are now attached to the cluster.
+2018-09-05 15:15:30,737 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Transitioning from [nodes_started] to [apply_meta_info].
+2018-09-05 15:15:30,740 ActorAddr-(T|:56695)/PID:25888 esrally.racecontrol INFO Starting lap [1/1]
+2018-09-05 15:15:30,740 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Telling mechanic of benchmark start.
+2018-09-05 15:15:30,740 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,742 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Telling driver to start benchmark.
+2018-09-05 15:15:30,741 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Transitioning from [cluster_started] to [benchmark_starting].
+2018-09-05 15:15:30,747 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO BenchmarkActor received unknown message [<esrally.mechanic.mechanic.BenchmarkStarted object at 0x7f6ad625b898>] (ignoring).
+2018-09-05 15:15:30,746 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.telemetry WARNING merges_total_time is 2054806 ms indicating that the cluster is not in a defined clean state. Recorded index time metrics may be misleading.
+2018-09-05 15:15:30,746 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.telemetry WARNING indexing_total_time is 80226 ms indicating that the cluster is not in a defined clean state. Recorded index time metrics may be misleading.
+2018-09-05 15:15:30,746 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.telemetry WARNING refresh_total_time is 204499 ms indicating that the cluster is not in a defined clean state. Recorded index time metrics may be misleading.
+2018-09-05 15:15:30,747 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.telemetry WARNING flush_total_time is 41 ms indicating that the cluster is not in a defined clean state. Recorded index time metrics may be misleading.
+2018-09-05 15:15:30,749 ActorAddr-(T|:62089)/PID:25896 esrally.metrics INFO Creating in-memory metrics store
+2018-09-05 15:15:30,750 ActorAddr-(T|:62089)/PID:25896 esrally.metrics INFO Opening metrics store for trial timestamp=[20180905T151530Z], track=[jssz_benchmark_scene_1], challenge=[just_bulk], car=[['external']]
+2018-09-05 15:15:30,750 ActorAddr-(T|:62089)/PID:25896 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,758 ActorAddr-(T|:10650)/PID:25897 esrally.actor INFO Preparing track [jssz_benchmark_scene_1]
+2018-09-05 15:15:30,771 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Benchmark is about to start.
+2018-09-05 15:15:30,764 ActorAddr-(T|:10650)/PID:25897 esrally.utils.repo INFO Checking out [master] in [/root/.rally/benchmarks/tracks/billions-rally-tracks] for distribution version [5.4.3].
+2018-09-05 15:15:30,772 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Benchmark consists of [3] steps executed by (at most) [1] clients as specified by the allocation matrix:
+[[JoinPoint(0), TaskAllocation [0/1] for delete-index, JoinPoint(1), TaskAllocation [0/1] for create-index, JoinPoint(2), TaskAllocation [0/1] for bulk, JoinPoint(3)]]
+2018-09-05 15:15:30,772 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Allocating load generator [0] on [localhost]
+2018-09-05 15:15:30,772 ActorAddr-(T|:62089)/PID:25896 esrally.actor INFO Capabilities [{'Thespian ActorSystem Name': 'multiprocTCPBase', 'Python Version': (3, 4, 2, 'final', 0), 'Thespian Generation': (3, 9), 'Thespian Watch Supported': True, 'Thespian Version': '1536160530604', 'ip': '127.0.0.1', 'coordinator': True, 'Thespian ActorSystem Version': 2, 'Convention Address.IPv4': '127.0.0.1:1900'}] match requirements [{'coordinator': True}].
+2018-09-05 15:15:30,773 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Starting load generator [0].
+2018-09-05 15:15:30,776 ActorAddr-(T|:62089)/PID:25896 esrally.actor INFO A track preparator has exited.
+2018-09-05 15:15:30,779 ActorAddr-(T|:62089)/PID:25896 esrally.actor INFO A track preparator has exited.
+2018-09-05 15:15:30,779 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is about to start.
+2018-09-05 15:15:30,781 ActorAddr-(T|:49442)/PID:25903 esrally.client INFO Creating ES client connected to [{'host': '10.69.8.30', 'port': 9200}] with options [{'timeout': 60}]
+2018-09-05 15:15:30,789 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO [1/1] drivers reached join point [0/3].
+2018-09-05 15:15:30,781 ActorAddr-(T|:49442)/PID:25903 esrally.client INFO SSL support: off
+2018-09-05 15:15:30,781 ActorAddr-(T|:49442)/PID:25903 esrally.client INFO HTTP basic authentication: off
+2018-09-05 15:15:30,791 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Task has finished.
+2018-09-05 15:15:30,789 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO All drivers completed their tasks until join point [0/3].
+2018-09-05 15:15:30,782 ActorAddr-(T|:49442)/PID:25903 esrally.client INFO HTTP compression: off
+2018-09-05 15:15:30,790 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Scheduling next task for client id [0] at their timestamp [4259272.502615] (master timestamp [4259272.504403])
+2018-09-05 15:15:30,791 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Bulk adding request metrics to metrics store.
+2018-09-05 15:15:30,782 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [bulk-index] for [Bulk].
+2018-09-05 15:15:30,783 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [force-merge] for [ForceMerge].
+2018-09-05 15:15:30,783 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [indices-stats] for [IndicesStats].
+2018-09-05 15:15:30,783 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [node-stats] for [NodesStats].
+2018-09-05 15:15:30,783 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [query] for [Search].
+2018-09-05 15:15:30,784 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [raw-request] for [RawRequest].
+2018-09-05 15:15:30,784 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable cluster-health] for [ClusterHealth].
+2018-09-05 15:15:30,784 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable put-pipeline] for [PutPipeline].
+2018-09-05 15:15:30,784 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable refresh] for [Refresh].
+2018-09-05 15:15:30,785 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable create-index] for [CreateIndex].
+2018-09-05 15:15:30,785 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable delete-index] for [DeleteIndex].
+2018-09-05 15:15:30,785 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable create-index-template] for [CreateIndexTemplate].
+2018-09-05 15:15:30,785 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Registering context-manager capable runner object [retryable delete-index-template] for [DeleteIndexTemplate].
+2018-09-05 15:15:30,786 ActorAddr-(T|:49442)/PID:25903 esrally.utils.modules INFO Loading component [jssz_benchmark_scene_1] from [/root/.rally/benchmarks/tracks/billions-rally-tracks/jssz_benchmark_scene_1]
+2018-09-05 15:15:30,787 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] reached join point [JoinPoint(0)].
+2018-09-05 15:15:30,792 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is continuing its work at task index [1] on [4259272.502615], that is in [0:00:00.996895].
+2018-09-05 15:15:31,790 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] starts driving now.
+2018-09-05 15:15:31,790 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is executing [delete-index].
+2018-09-05 15:15:31,793 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Resetting relative time of cluster system metrics store.
+2018-09-05 15:15:31,790 ActorAddr-(T|:49442)/PID:25903 esrally.driver.driver INFO Choosing [deterministic scheduler] for [delete-index].
+2018-09-05 15:15:31,794 ActorAddr-(T|:61266)/PID:25895 esrally.actor INFO Resetting relative time of system metrics store on host [[{'host': '10.69.8.30', 'port': 9200}]].
+2018-09-05 15:15:31,791 ActorAddr-(T|:49442)/PID:25903 esrally.driver.driver INFO Creating iteration-count based schedule with [deterministic] distribution for [delete-index] with [0] warmup iterations and [1] iterations.
+2018-09-05 15:15:31,793 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Index [billions-jssz.benchmark.scene1-0] already exists. Deleting it.
+2018-09-05 15:15:31,803 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Index [billions-jssz.benchmark.scene1-1] already exists. Deleting it.
+2018-09-05 15:15:31,814 ActorAddr-(T|:49442)/PID:25903 esrally.driver.runner INFO Index [billions-jssz.benchmark.scene1-2] already exists. Deleting it.
+2018-09-05 15:15:36,794 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is ready for the next task.
+2018-09-05 15:15:36,795 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] reached join point [JoinPoint(1)].
+2018-09-05 15:15:36,796 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO [1/1] drivers reached join point [1/3].
+2018-09-05 15:15:36,797 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Task has finished.
+2018-09-05 15:15:36,796 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO All drivers completed their tasks until join point [1/3].
+2018-09-05 15:15:36,797 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is continuing its work at task index [3] on [4259278.510049], that is in [0:00:00.998419].
+2018-09-05 15:15:36,797 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Scheduling next task for client id [0] at their timestamp [4259278.510049] (master timestamp [4259278.510933])
+2018-09-05 15:15:36,797 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Bulk adding request metrics to metrics store.
+2018-09-05 15:15:37,797 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] starts driving now.
+2018-09-05 15:15:37,797 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is executing [create-index].
+2018-09-05 15:15:37,798 ActorAddr-(T|:49442)/PID:25903 esrally.driver.driver INFO Choosing [deterministic scheduler] for [create-index].
+2018-09-05 15:15:37,798 ActorAddr-(T|:49442)/PID:25903 esrally.driver.driver INFO Creating iteration-count based schedule with [deterministic] distribution for [create-index] with [0] warmup iterations and [1] iterations.
+2018-09-05 15:15:37,799 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Resetting relative time of cluster system metrics store.
+2018-09-05 15:15:37,800 ActorAddr-(T|:61266)/PID:25895 esrally.actor INFO Resetting relative time of system metrics store on host [[{'host': '10.69.8.30', 'port': 9200}]].
+2018-09-05 15:15:42,802 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is ready for the next task.
+2018-09-05 15:15:42,802 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] reached join point [JoinPoint(2)].
+2018-09-05 15:15:42,804 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO [1/1] drivers reached join point [2/3].
+2018-09-05 15:15:42,805 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Task has finished.
+2018-09-05 15:15:42,804 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO All drivers completed their tasks until join point [2/3].
+2018-09-05 15:15:42,805 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is continuing its work at task index [5] on [4259284.517861], that is in [0:00:00.998437].
+2018-09-05 15:15:42,805 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO Scheduling next task for client id [0] at their timestamp [4259284.517861] (master timestamp [4259284.518733])
+2018-09-05 15:15:42,805 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Bulk adding request metrics to metrics store.
+2018-09-05 15:15:43,805 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] starts driving now.
+2018-09-05 15:15:43,805 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is executing [bulk].
+2018-09-05 15:15:43,805 ActorAddr-(T|:49442)/PID:25903 esrally.driver.driver INFO Choosing [deterministic scheduler] for [bulk].
+2018-09-05 15:15:43,806 ActorAddr-(T|:49442)/PID:25903 esrally.driver.driver INFO Creating time-period based schedule with [deterministic] distribution for [bulk] with a warmup period of [0] seconds and a time period of [None] seconds.
+2018-09-05 15:15:43,807 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Resetting relative time of cluster system metrics store.
+2018-09-05 15:15:43,808 ActorAddr-(T|:61266)/PID:25895 esrally.actor INFO Resetting relative time of system metrics store on host [[{'host': '10.69.8.30', 'port': 9200}]].
+2018-09-05 15:15:48,810 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is ready for the next task.
+2018-09-05 15:15:48,810 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] reached join point [JoinPoint(3)].
+2018-09-05 15:15:48,811 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO [1/1] drivers reached join point [3/3].
+2018-09-05 15:15:48,811 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO All drivers completed their tasks until join point [3/3].
+2018-09-05 15:15:48,812 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Benchmark is complete.
+2018-09-05 15:15:48,811 ActorAddr-(T|:62089)/PID:25896 esrally.driver.driver INFO All steps completed.
+2018-09-05 15:15:48,812 ActorAddr-(T|:62089)/PID:25896 esrally.metrics INFO Closing metrics store.
+2018-09-05 15:15:48,813 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Bulk adding request metrics to metrics store.
+2018-09-05 15:15:48,813 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Transitioning from [benchmark_started] to [benchmark_stopping].
+2018-09-05 15:15:48,813 ActorAddr-(T|:62089)/PID:25896 esrally.actor INFO Main driver received ActorExitRequest and will terminate all load generators.
+2018-09-05 15:15:48,814 ActorAddr-(T|:49442)/PID:25903 esrally.actor INFO LoadGenerator[0] is exiting due to ActorExitRequest.
+2018-09-05 15:15:48,815 ActorAddr-(T|:62089)/PID:25896 esrally.actor INFO Load generator [0] has exited.
+2018-09-05 15:15:48,816 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO BenchmarkActor received unknown message [ChildActorExited:ActorAddr-(T|:62089)] (ignoring).
+2018-09-05 15:15:48,819 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO BenchmarkActor received unknown message [ChildActorExited:ActorAddr-(T|:62089)] (ignoring).
+2018-09-05 15:15:48,824 ActorAddr-(T|:52488)/PID:25889 esrally.mechanic.telemetry INFO Gathering indices stats for all primaries on benchmark stop.
+2018-09-05 15:15:48,828 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Bulk adding system metrics to metrics store.
+2018-09-05 15:15:48,828 ActorAddr-(T|:56695)/PID:25888 esrally.racecontrol INFO Finished lap [1/1]
+2018-09-05 15:15:48,828 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Asking mechanic to stop the engine.
+2018-09-05 15:15:48,830 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Transitioning from [benchmark_stopped] to [cluster_stopping].
+2018-09-05 15:15:48,831 ActorAddr-(T|:61266)/PID:25895 esrally.actor INFO Stopping nodes [jssz-billions-es-12-all_in_one].
+2018-09-05 15:15:48,831 ActorAddr-(T|:61266)/PID:25895 esrally.metrics INFO Closing metrics store.
+2018-09-05 15:15:48,832 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Mechanic has stopped engine successfully.
+2018-09-05 15:15:48,833 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Child actor exited while engine is stopping or stopped: [ChildActorExited:ActorAddr-(T|:61266)]
+2018-09-05 15:15:48,836 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO Child actor exited while engine is stopping or stopped: [ChildActorExited:ActorAddr-(T|:61266)]
+2018-09-05 15:15:48,841 -not-actor-/PID:25880 esrally.racecontrol INFO Benchmark has finished successfully.
+2018-09-05 15:15:48,841 -not-actor-/PID:25880 esrally.racecontrol INFO Telling benchmark actor to exit.
+2018-09-05 15:15:48,832 ActorAddr-(T|:56695)/PID:25888 esrally.actor INFO Bulk adding system metrics to metrics store.
+2018-09-05 15:15:48,842 -not-actor-/PID:25880 esrally.rally INFO Attempting to shutdown internal actor system.
+2018-09-05 15:15:48,833 ActorAddr-(T|:56695)/PID:25888 esrally.reporter INFO 
+2018-09-05 15:15:48,842 ActorAddr-(T|:52488)/PID:25889 esrally.actor INFO MechanicActor#receiveMessage unrecognized(msg = [<class 'thespian.actors.ActorExitRequest'>] sender = [ActorAddr-(T|:56695)])
+2018-09-05 15:15:48,833 ActorAddr-(T|:56695)/PID:25888 esrally.reporter INFO [1m------------------------------------------------------[0m
+2018-09-05 15:15:48,834 ActorAddr-(T|:56695)/PID:25888 esrally.reporter INFO [1m    _______             __   _____                    [0m
+2018-09-05 15:15:48,835 ActorAddr-(T|:56695)/PID:25888 esrally.reporter INFO [1m   / ____(_)___  ____ _/ /  / ___/_________  ________ [0m
+2018-09-05 15:15:48,836 ActorAddr-(T|:56695)/PID:25888 esrally.reporter INFO [1m  / /_  / / __ \/ __ `/ /   \__ \/ ___/ __ \/ ___/ _ \[0m
+2018-09-05 15:15:48,847 -not-actor-/PID:25887 root INFO ActorSystem Logging Shutdown
+2018-09-05 15:15:48,849 -not-actor-/PID:25886 root INFO ---- Actor System shutdown
+2018-09-05 15:15:48,849 -not-actor-/PID:25880 esrally.rally INFO Actor system is still running. Waiting...
+2018-09-05 15:15:49,850 -not-actor-/PID:25880 esrally.rally INFO Shutdown completed.
