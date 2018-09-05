@@ -1,0 +1,27 @@
+{% set index_count = 3 %}
+{% import "rally.helpers" as rally with context %}
+{
+  "version": 2,
+  "description": "max throughput with {{index_count}} index",
+  "indices": [
+    {% set comma = joiner() %}
+    {% for item in range(index_count) %}
+    {{ comma() }}
+    {
+      "name": "billions-jssz.benchmark.scene1-{{item}}",
+      "body": "settings/mapping.json",
+      "types": [
+        {
+          "name": "logs",
+          "documents": "{{index_source_file | default('documents.json')}}",
+          "document-count": {{ index_document_count | default(1) }},
+          "uncompressed-bytes": {{ index_uncompressed_bytes | default(1) }}
+        }
+      ]
+    }
+    {% endfor %}
+  ],
+  "challenges": [
+    {{ rally.collect(parts="challenges/just_bulk.json") }}
+  ]
+}
