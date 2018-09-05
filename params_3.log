@@ -1,0 +1,13 @@
+{
+  "number_of_shards": 1,
+  "number_of_replicas": 0,
+  "refresh_interval": "30s",
+  "sync_interval": "60s",
+  "durability": "async",
+  "source_enabled": true,
+  "index_source_file": "test.json",
+  "index_document_count": 1000,
+  "index_uncompressed_bytes": 2902581,
+  "bulk_size": 20,
+  "clients": 1
+}
