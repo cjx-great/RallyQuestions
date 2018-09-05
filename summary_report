@@ -1,0 +1,47 @@
+Running delete-index                                                           [100% done]
+Running create-index                                                           [100% done]
+Running bulk                                                                   [100% done]
+
+------------------------------------------------------
+    _______             __   _____
+   / ____(_)___  ____ _/ /  / ___/_________  ________
+  / /_  / / __ \/ __ `/ /   \__ \/ ___/ __ \/ ___/ _ \
+ / __/ / / / / / /_/ / /   ___/ / /__/ /_/ / /  /  __/
+/_/   /_/_/ /_/\__,_/_/   /____/\___/\____/_/   \___/
+------------------------------------------------------
+
+|   Lap |                         Metric |   Task |       Value |   Unit |
+|------:|-------------------------------:|-------:|------------:|-------:|
+|   All |            Total indexing time |        |     1.32283 |    min |
+|   All |    Min indexing time per shard |        |           0 |    min |
+|   All | Median indexing time per shard |        | 0.000783333 |    min |
+|   All |    Max indexing time per shard |        |      0.6527 |    min |
+|   All |               Total merge time |        |      34.153 |    min |
+|   All |       Min merge time per shard |        |           0 |    min |
+|   All |    Median merge time per shard |        |           0 |    min |
+|   All |       Max merge time per shard |        |     19.7772 |    min |
+|   All |             Total refresh time |        |     3.37935 |    min |
+|   All |     Min refresh time per shard |        |           0 |    min |
+|   All |  Median refresh time per shard |        |     0.00095 |    min |
+|   All |     Max refresh time per shard |        |     1.73317 |    min |
+|   All |               Total flush time |        | 0.000683333 |    min |
+|   All |       Min flush time per shard |        |           0 |    min |
+|   All |    Median flush time per shard |        |           0 |    min |
+|   All |       Max flush time per shard |        |      0.0005 |    min |
+|   All |             Total Young Gen GC |        |           0 |      s |
+|   All |               Total Old Gen GC |        |           0 |      s |
+|   All |                     Store size |        |   0.0569587 |     GB |
+|   All |                  Translog size |        |    0.122672 |     GB |
+|   All |         Heap used for segments |        |    0.375759 |     MB |
+|   All |       Heap used for doc values |        |    0.168648 |     MB |
+|   All |            Heap used for terms |        |    0.161731 |     MB |
+|   All |            Heap used for norms |        |  0.00152588 |     MB |
+|   All |           Heap used for points |        |    0.031251 |     MB |
+|   All |    Heap used for stored fields |        |   0.0126038 |     MB |
+|   All |                  Segment count |        |          22 |        |
+|   All |                     error rate |   bulk |           0 |      % |
+
+[WARNING] No throughput metrics available for [bulk]. Likely cause: The benchmark ended already during warmup.
+
+--------------------------------
+[INFO] SUCCESS (took 19 seconds)
